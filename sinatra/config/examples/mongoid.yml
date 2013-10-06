@@ -1,0 +1,13 @@
+development:
+  sessions:
+    default:
+      database: thingstodo_development
+      hosts:
+        - localhost:27017
+
+test:
+  sessions:
+    default:
+      database: thingstodo_test
+      hosts:
+        - localhost:27017

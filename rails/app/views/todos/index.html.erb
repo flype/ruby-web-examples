@@ -1,0 +1,28 @@
+<div class="row form">
+  <div class="col-lg-6">
+    <%= form_for Todo.new do |f| %>
+      <div class="form-group">
+        <%= f.text_field :text, :class => 'form-control', :placeholder => "What?" %>
+      </div>
+      <%= f.button 'Add', :class => 'btn btn-default' %>
+    <% end %>
+  </div>
+</div>
+
+<div class="row list">
+  <div class="col-lg-12">
+    <ul>
+      <% for todo in @todos %>
+      <li>
+        <div class="todo">
+          <div class="<%= todo_caption_class(todo) %>"><%= todo.text %></div>
+          <% if todo.pending? %>
+            <%= button_to 'Done', done_todo_path(todo), :method => :put, :class => "btn btn-success" %>
+          <% end %>
+        </div>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+`

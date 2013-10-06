@@ -1,0 +1,50 @@
+.container {
+  max-width: 730px;
+}
+
+.header {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.form {
+  margin: 0px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.list {
+  margin: 0px;
+  padding-bottom: 30px;
+}
+
+.list > div {
+  padding: 0px;
+}
+
+.list ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.list ul li {
+  padding: 20px 0px 20px 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.todo {
+  overflow: hidden;
+}
+
+.caption {
+  float: left;
+  width: 618px;
+  padding-top: 6px;
+  min-height: 34px;
+}
+
+.caption.done {
+  text-decoration: line-through;
+  color: #999;
+

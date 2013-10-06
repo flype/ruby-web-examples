@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Things ToDo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/thingstodo.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">Things ToDo</h3>
+      </div>
+
+      <div class="row form">
+        <div class="col-lg-6">
+          <form role="form">
+            <div class="form-group">
+              <input type="text" class="form-control" id="todo" name="todo" placeholder="What?">
+            </div>
+            <button type="submit" class="btn btn-default">Add</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row list">
+        <div class="col-lg-12">
+          <ul>
+            <li>
+              <div class="todo">
+                <div class="caption">Buy aubergines</div>
+                <form action="/todos/123/done">
+                  <button type="submit" class="btn btn-success">Done </button>
+                </form>
+              </div>
+            </li>
+            <li>
+              <div class="todo">
+                <div class="caption">Buy parmesan</div>
+                <form action="/todos/123/done">
+                  <button type="submit" class="btn btn-success">Done </button>
+                </form>
+              </div>
+            </li>
+            <li>
+              <div class="todo">
+                <div class="caption done">Buy tomatoes</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
+

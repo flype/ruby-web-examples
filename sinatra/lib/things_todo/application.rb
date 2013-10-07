@@ -21,8 +21,12 @@ module ThingsTodo
     end
 
     put '/todos/:id/done' do
-      ThingsTodo::DB::Todos.mark_as_done(params[:id])
-      redirect '/'
+      begin
+        ThingsTodo::DB::Todos.mark_as_done(params[:id])
+        redirect '/'
+      rescue ThingsTodo::DB::Todos::NotFoundError
+        status 404
+      end
     end
   end
 end

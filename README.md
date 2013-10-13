@@ -1,4 +1,5 @@
-# Web development with Ruby
+# Web development with Ruby [(slides)](https://speakerdeck.com/felipetalavera/web-development-with-ruby)
+
 
 A couple of example applications that implement a very basic ToDo application in both Ruby on Rails and Sinatra.
 
